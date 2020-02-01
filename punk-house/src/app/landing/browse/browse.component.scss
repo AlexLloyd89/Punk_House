@@ -1,0 +1,38 @@
+.browse-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.browse-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.browse-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    width: fit-content;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+  }
+  .genre {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 150px;
+    padding-bottom: 1.34375em;
+    margin: 0.25em 0;
+  }
+}

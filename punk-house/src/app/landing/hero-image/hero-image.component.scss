@@ -1,5 +1,10 @@
 .hero-container {
-  background-image: url("../../../assets/images/tourBackground.jpg");
+  background-image: linear-gradient(
+      to top,
+      rgba(253, 253, 253, 0.39),
+      rgba(117, 19, 93, 0.445)
+    ),
+    url("../../../assets/images/tourBackground.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,10 +20,11 @@
 
 img {
   max-width: 100%;
+  position: relative;
 }
 
 a {
-  margin: 0px 20px;
+  margin: 0px 10px;
   text-decoration: none;
   color: white;
 }
@@ -28,4 +34,13 @@ a {
   width: 100%;
   justify-content: flex-end;
   margin-right: 10%;
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: 40px;
+}
+
+.scroll-icon {
+  color: white;
 }

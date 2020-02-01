@@ -12,3 +12,19 @@ body {
 .mat-toolbar {
   background: transparent;
 }
+
+/* Border */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: black;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-label {
+  color: black;
+}
+
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  background-color: #e9178e;
+}
