@@ -7,7 +7,9 @@ const routes: Routes = [
     path: "",
     loadChildren: () =>
       import("./landing/landing.module").then(m => LandingModule)
-  }
+  },
+  // If route not found, redirect to home
+  { path: "**", redirectTo: "", pathMatch: "full" }
 ];
 
 @NgModule({

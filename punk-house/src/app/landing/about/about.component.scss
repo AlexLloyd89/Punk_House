@@ -1,0 +1,19 @@
+@import "../../../scss/variables.scss";
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.about-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  font-size: 1.5em;
+  font-weight: 500;
+}

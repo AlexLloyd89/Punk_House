@@ -23,6 +23,7 @@ import {
     MatSelectModule
   ],
   exports: [
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
