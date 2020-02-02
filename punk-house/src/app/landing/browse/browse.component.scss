@@ -1,3 +1,5 @@
+@import "../../../scss/variables.scss";
+
 .browse-container {
   max-width: 800px;
   margin: 0 auto;
@@ -34,5 +36,13 @@ form {
     width: 150px;
     padding-bottom: 1.34375em;
     margin: 0.25em 0;
+  }
+
+  .submit {
+    margin-bottom: 10px;
+  }
+  .reset {
+    background-color: $accent;
+    color: white;
   }
 }
