@@ -9,8 +9,9 @@ import { SharedModule } from "../shared/shared.module";
 
 import { MatToolbarModule } from "@angular/material";
 import { BrowseComponent } from "./browse/browse.component";
-import { AboutComponent } from './about/about.component';
-import { LogInComponent } from './log-in/log-in.component';
+import { AboutComponent } from "./about/about.component";
+import { LogInComponent } from "./log-in/log-in.component";
+import { FeaturedBandsComponent } from './featured-bands/featured-bands.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LogInComponent } from './log-in/log-in.component';
     HeroImageComponent,
     BrowseComponent,
     AboutComponent,
-    LogInComponent
+    LogInComponent,
+    FeaturedBandsComponent
   ],
   imports: [CommonModule, LandingRoutingModule, MatToolbarModule, SharedModule]
 })

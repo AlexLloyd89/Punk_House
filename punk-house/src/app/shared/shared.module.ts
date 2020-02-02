@@ -8,7 +8,8 @@ import {
   MatInputModule,
   MatButtonModule,
   MatIconModule,
-  MatSelectModule
+  MatSelectModule,
+  MatToolbarModule
 } from "@angular/material";
 
 @NgModule({
@@ -20,7 +21,8 @@ import {
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatToolbarModule
   ],
   exports: [
     ReactiveFormsModule,
@@ -28,7 +30,8 @@ import {
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule {}

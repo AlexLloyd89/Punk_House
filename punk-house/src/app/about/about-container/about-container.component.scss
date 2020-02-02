@@ -1,0 +1,43 @@
+.hero-container {
+  height: 100%vh;
+}
+
+.logo {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 150px;
+  width: 100%;
+
+  padding-top: 70px;
+}
+
+a {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  justify-content: center;
+  align-items: inherit;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: 40px;
+}
+
+.scroll-icon {
+  color: white;
+}

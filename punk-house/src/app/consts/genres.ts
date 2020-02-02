@@ -1,4 +1,4 @@
-const genres = [
+const genres: string[] = [
   "Blues",
   "Classic Rock",
   "Country",
@@ -127,4 +127,4 @@ const genres = [
   "Dance Hall"
 ];
 
-export const GENRES = genres.sort();
+export const GENRES: string[] = genres.sort();

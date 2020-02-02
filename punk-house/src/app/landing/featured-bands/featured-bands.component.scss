@@ -1,0 +1,44 @@
+@import "../../../scss/variables.scss";
+.featured-bands-header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.featured-bands-container {
+  padding: 20px 20px 0px;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  font-weight: 500;
+}
+
+.band-container {
+  display: flex;
+  justify-content: start;
+  max-width: 350px;
+  width: 100%;
+  padding-right: 20px;
+  img {
+    max-width: 150px;
+  }
+
+  .band-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .band-name {
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

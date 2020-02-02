@@ -1,0 +1,32 @@
+<div class="featured-bands-header">
+  FEATURED BANDS
+</div>
+<div class="featured-bands-container">
+  <div class="band-container" *ngFor="let band of featuredBands">
+    <img src="{{ band.image }}" />
+    <div class="band-details">
+      <div>
+        <div class="band-name">
+          {{ band.bandName | uppercase }}
+        </div>
+        <div class="band-location">
+          {{ band.city | uppercase }}, {{ band.state | uppercase }},
+          {{ band.country | uppercase }}
+        </div>
+        <div class="band-genres">
+          {{ band.mainGenre | titlecase }} {{ band.subGenreOne ? "/" : "" }}
+          {{
+            band.subGenreOne ? (band.subGenreOne | titlecase) : ("" | titlecase)
+          }}
+          {{ band.subGenreTwo ? "/" : "" }}
+          {{
+            band.subGenreTwo ? (band.subGenreTwo | titlecase) : ("" | titlecase)
+          }}
+        </div>
+      </div>
+      <div class="featured-song">
+        <a href="{{ band.featuredSong }}" target="_blank">Sound Cloud Link</a>
+      </div>
+    </div>
+  </div>
+</div>
