@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "punk-house",
+      "public": "dist/punk-house",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

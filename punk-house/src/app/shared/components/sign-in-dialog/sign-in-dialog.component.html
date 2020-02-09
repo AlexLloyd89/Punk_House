@@ -1,0 +1,34 @@
+<div mat-dialog-title>LOG IN</div>
+<form [formGroup]="signInForm">
+  <mat-dialog-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" />
+      <mat-error *ngIf="signInForm.get('email').invalid"
+        >Please enter a valid email address</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" />
+      <mat-error *ngIf="signInForm.get('password').invalid"
+        >Please enter a valid password</mat-error
+      >
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="reset" mat-raised-button type="reset">
+      Redo
+    </button>
+    <button
+      [disabled]="!signInForm.valid"
+      color="primary"
+      (click)="submitSignInForm(signInForm)"
+      mat-raised-button
+    >
+      Go!<mat-icon>arrow_forward</mat-icon>
+    </button>
+    <!--
+    <button (click)="googleLogIn()">Google</button> -->
+  </mat-dialog-actions>
+</form>

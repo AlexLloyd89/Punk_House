@@ -31,7 +31,7 @@ body {
 }
 .mat-option:hover:not(.mat-option-disabled),
 .mat-option:focus:not(.mat-option-disabled) {
-  background: #f155ae87;
+  background: #f155ae87 !important;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline {

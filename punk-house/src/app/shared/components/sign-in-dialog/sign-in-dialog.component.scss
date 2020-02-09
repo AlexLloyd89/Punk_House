@@ -1,0 +1,26 @@
+@import "../../../../scss/variables.scss";
+.mat-dialog-title {
+  font-size: 80px;
+  color: $primary;
+  text-align: center;
+}
+.mat-dialog-content {
+  padding-top: 20px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+.mat-dialog-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset {
+  background-color: $accent;
+  color: white;
+}
+
+.mat-icon {
+  padding: 0px 0px 0px 5px;
+}

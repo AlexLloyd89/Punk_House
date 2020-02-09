@@ -25,6 +25,11 @@ a {
   margin: 0px 10px;
   text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .nav {

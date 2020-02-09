@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 // Material Imports
 import {
@@ -9,11 +9,15 @@ import {
   MatButtonModule,
   MatIconModule,
   MatSelectModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatDialogModule
 } from "@angular/material";
 
+// Custom Components
+import { SignInDialogComponent } from "./components/sign-in-dialog/sign-in-dialog.component";
+
 @NgModule({
-  declarations: [],
+  declarations: [SignInDialogComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -22,7 +26,9 @@ import {
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDialogModule,
+    FormsModule
   ],
   exports: [
     ReactiveFormsModule,
@@ -31,7 +37,9 @@ import {
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
-    MatToolbarModule
-  ]
+    MatToolbarModule,
+    MatDialogModule
+  ],
+  entryComponents: [SignInDialogComponent]
 })
 export class SharedModule {}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "punk-house": {
+      "hosting": {
+        "punk-house": [
+          "punk-house"
+        ]
+      }
+    }
+  }
+}
