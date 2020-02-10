@@ -21,13 +21,17 @@ export class AuthService {
   }
 
   signUp(email, password) {
-    return new Promise<any>((resolve, reject) => {
-      this.afAuth.createUserWithEmailAndPassword(email, password).then(
-        res => {
-          resolve(res);
-        },
-        err => reject(err)
-      );
-    });
+    try {
+      return new Promise<any>((res, reject) => {
+        this.afAuth.createUserWithEmailAndPassword(email, password).then(
+          res => {
+            console.log(res);
+          },
+          err => reject(err)
+        );
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }
 }
