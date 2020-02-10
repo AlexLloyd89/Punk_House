@@ -24,7 +24,10 @@ export class SignInDialogComponent implements OnInit {
 
   submitSignInForm(formData) {
     console.log(formData.value);
-    this.authService.signUp(formData.value.email, formData.value.password);
+    this.authService.signUp(formData.value.email, formData.value.password).then(
+      res => console.log("from component", res),
+      err => console.log(err)
+    );
   }
 
   googleLogIn() {
